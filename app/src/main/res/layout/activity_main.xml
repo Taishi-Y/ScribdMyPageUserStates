@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.taishi.mypagecharts.MainActivity">
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/screenshot_bar"
+
+        android:id="@+id/iv_bar"/>
+
+
+    <include
+        layout="@layout/include_userpage"
+        android:id="@+id/include_views_1"
+
+        android:layout_above="@+id/imageView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv_bar"/>
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/screenshot_footer"
+
+        android:id="@+id/imageView"/>
+</RelativeLayout>
